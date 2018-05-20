@@ -1,0 +1,80 @@
+html body {
+  font-family: monospace;
+}
+
+.checkerboard {
+  box-shadow: 1px 1px 4px #222;
+  display: block;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+}
+
+.checkerboard-row {
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+}
+
+.checkerboard-cell {
+  align-items: center;
+  display: inline-flex;
+  height: 50px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transition: 0.3s;
+  width: 50px;
+}
+
+.checker {
+  border-radius: 100%;
+  box-shadow: 2px 2px 2px #222;
+  height: 40px;
+  margin: 0 auto;
+  position: absolute;
+  transition: 0.5s;
+  width: 40px;
+}
+
+div .checker-drag {
+  border: 1px black dashed;
+  opacity: 0.2;
+}
+
+div .cell-drag {
+  opacity: 0.8;
+}
+
+div .cell-drag::after{
+  border: 2px #cc6 dashed;
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.checker-light {
+  background-color: cornflowerblue;
+}
+
+.checker-dark {
+  background-color: forestgreen;
+}
+
+.checker:hover {
+  box-shadow: 3px 6px 6px #222;
+}
+
+.light {
+  background-color: burlywood;
+}
+
+.dark {
+  background-color: sienna;
+}
