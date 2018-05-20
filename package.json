@@ -18,7 +18,8 @@
     "webpack-dev-server": "^3.1.4"
   },
   "scripts": {
-    "start": "webpack-dev-server main.js --mode=development"
+    "start": "webpack-dev-server main.js --mode=development",
+    "build": "webpack"
   },
   "babel": {
     "presets": [

@@ -1,6 +1,6 @@
 const config = {
   entry: [
-    './app.jsx',
+    './main.js',
   ],
   module: {
     rules: [
