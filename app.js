@@ -74,6 +74,7 @@ const CheckerboardCell = ({ci, ri, cellData, updateLayout}) => {
       onDragLeave={(e) => color === 'dark' && e.target.classList.remove('cell-drag')}
       onDragOver={(e) => e.preventDefault() /* Whole thing breaks without this for some reason 😬 */}
       onDrop={(e) => {
+        e.preventDefault();
         const obj = JSON.parse(e.dataTransfer.getData('text/plain')); // Yes, this needs to be JSON. 🙄
         color === 'dark' && updateLayout([ri, ci], obj.pos, obj.val, 'move');
         e.target.classList.remove('cell-drag');
