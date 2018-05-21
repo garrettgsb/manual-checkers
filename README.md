@@ -34,7 +34,7 @@ Oh that's easy 👉 https://garrettgsb.github.io/manual-checkers/
 
 Or maybe you're on a transatlantic voyage and have spotty WiFi, so you want to play locally. You can do that too: After you've `yarn start`ed, go to **localhost:8080**.
 
-Use Chrome. It's pretty janky on Firefox... More like really easy whack-a-mole.
+Works on Chrome and Firefox. Maybe works on other browsers too, if there are any.
 
 ## Restarting the game
 
